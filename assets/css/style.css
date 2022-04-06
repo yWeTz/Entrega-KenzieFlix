@@ -1,0 +1,157 @@
+body,
+header,
+div,
+figure,
+figcaption,
+section,
+h1,
+ul,
+li,
+p,
+button {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+figcaption {
+  display: none;
+}
+
+body {
+  background-color: #121214;
+}
+
+/* ----------------------- HEADER ----------------------- */
+.cabecalho .container figure {
+  display: flex;
+  justify-content: center;
+  margin-top: 42px;
+}
+
+.cabecalho .container figure img {
+  width: 100%;
+  max-width: 229px;
+  height: 100%;
+  height: 68px;
+}
+
+/* ------------------------ MAIN ------------------------ */
+main {
+  display: flex;
+  justify-content: center;
+}
+
+#Pergunta {
+  color: #fff;
+  text-align: center;
+  margin: 73px 0 61px 0;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 41.6px;
+}
+
+.sessaoPrincipal__avatares {
+  display: flex;
+  gap: 26px;
+  max-width: 700px;
+  width: 100%;
+}
+
+.sessaoPrincipal__avataresEscolhaAnimacao {
+  max-width: 160px;
+  max-height: 160px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: 1s;
+}
+.sessaoPrincipal__avataresEscolhaAnimacao:hover {
+  border: 1px solid #fff;
+  transition: 1s;
+}
+
+.sessaoPrincipal__avataresEscolhaAnimacao,
+.sessaoPrincipal__avataresCaixa,
+p:hover {
+  cursor: pointer;
+}
+.sessaoPrincipal__avataresEscolhaAnimacao img {
+  border-radius: 10px;
+  transition: transform 1s;
+}
+.sessaoPrincipal__avataresEscolhaAnimacao img:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+.sessaoPrincipal__avataresCaixa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  background-color: #1e1e20;
+}
+
+.sessaoPrincipal__avataresCaixa figure {
+  background-image: url(../img/simboloCinza.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 5.5px solid #9c9c9c;
+  border-radius: 100%;
+  padding: 10px;
+  transition: 1s;
+}
+
+.sessaoPrincipal__avataresCaixa figure img {
+  opacity: 0;
+}
+
+.sessaoPrincipal__avataresCaixa:hover {
+  border: 1px solid #fff;
+  transition: 1s;
+}
+.sessaoPrincipal__avataresCaixa:hover > figure {
+  border-color: #fff;
+  background-image: url(../img/simboloBranco.png);
+  transition: 1s;
+}
+.sessaoPrincipal__avataresEscolha p {
+  color: #9c9c9c;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.sessaoPrincipal__avataresEscolha:hover > p {
+  color: #fff;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 102px 0 88px 0;
+}
+.btnGerenciarPerfis {
+  font-size: 1rem;
+  font-weight: 500;
+  width: 206px;
+  height: 50px;
+  border: 1.5px solid #fff;
+  border-radius: 10px;
+  background-color: #121214;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btnGerenciarPerfis:hover {
+  color: #000;
+  background-color: #fff;
+  transition: 0.5s;
+}
